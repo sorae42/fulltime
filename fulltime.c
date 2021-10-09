@@ -16,11 +16,10 @@ int main(int argc, char *argv[])
 	time_t now = time(NULL);
 	struct tm *tm_struct = localtime(&now);
 	int hour = tm_struct->tm_hour;
-	if (hour >= 12) hour = hour - 12;
 	int minute = tm_struct->tm_min;
 
-	// it looks like a spagetti of if else statement
-	// any improvement to code reading of this part is appreciated
+	if (hour >= 12) hour = hour - 12;
+
 	if( minute == 0 ) printf("%s o' clock\n", numbers[hour]);
 	else if ( minute == 15 ) printf("quarter past %s\n", numbers[hour]);
 	else if ( minute == 30 ) printf("half past %s\n", numbers[hour]);
