@@ -5,7 +5,6 @@
  *
  */ 
 #include <stdio.h>
-#include <math.h>
 #include <time.h>
 
 int main(int argc, char *argv[])
@@ -25,7 +24,7 @@ int main(int argc, char *argv[])
 	if( minute == 0 ) printf("%s o' clock\n", numbers[hour]);
 	else if ( minute == 15 ) printf("quarter past %s\n", numbers[hour]);
 	else if ( minute == 30 ) printf("half past %s\n", numbers[hour]);
-	else if ( minute == 45 ) printf("quarter to  %s\n", numbers[hour]);
+	else if ( minute == 45 ) printf("quarter to %s\n", numbers[hour]);
 	else if ( minute < 30 ) {
 		if ( minute <= 10 ) printf("%s past %s\n", numbers[minute], numbers[hour]);
 		else if (minute < 20 ) printf("%s past %s\n", extras[minute-10],numbers[hour]);
