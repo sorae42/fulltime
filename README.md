@@ -12,7 +12,7 @@ below.
 `sudo apt-get install make gcc`
 
 2. Clone this repository
-`git clone https://github.com/skyventuree/fulltime && fulltime`
+`git clone https://github.com/skyventuree/fulltime && cd fulltime`
 
 3. Compile the program
 `make`
